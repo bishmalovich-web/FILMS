@@ -1,0 +1,11 @@
+ADD TO HTML HEAD:
+<link rel="manifest" href="manifest.json">
+
+ADD BEFORE </body>:
+<script src="sales.js"></script>
+<script>navigator.serviceWorker.register("service-worker.js");</script>
+
+ADD BUTTONS:
+<button onclick="saveQuote()">Save</button>
+<button onclick="shareWhatsApp()">WhatsApp</button>
+<button onclick="copyQuote()">Copy</button>
